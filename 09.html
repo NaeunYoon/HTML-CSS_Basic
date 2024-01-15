@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css 주요속성</title>
+</head>
+
+<style>
+/* #border li:nth-child(1){border: 3px solid red;} */
+#border li{border: 3px solid red;}
+#border li:nth-child(1){border-color: green;}
+#border li:nth-child(2){border-radius:10px} 
+/*네 방향이 모두 10임 #border li:nth-child(2){border-radius:10px,10px,10px,10px}  */
+#border li:nth-child(3){border-radius:100%,10%,10%,10%} 
+#border li:nth-child(4){border-top:2px solid gold} 
+#border li:nth-child(5){border:none; border-bottom: 2px dashed pink} 
+
+#font li:nth-child(1){color :aqua;}
+#font li:nth-child(1){font-size : 20px;}
+#font li:nth-child(1){font-weight : bold;}
+#font li:nth-child(1){font-style : italic;}
+#font li:nth-child(2){font-family : 궁서체,바탕,"굴림";font-size: 30px; font-weight: bold;}
+#font li:nth-child(3){line-height: 100px;}
+#font li:nth-child(4){line-height: 5;}
+#font li:nth-child(5){font : bold italic 20px/20px 궁서체 serif }
+#font li:nth-child(6){text-indent: -20px;}
+#font li:nth-child(6){letter-spacing: 20px;}
+#font li:nth-child(7){text-align: center;}
+#font li:nth-child(8){user-select: none; pointer-events: none;}
+#font li:nth-child(9){text-shadow: 2px-5px #ff0000;}
+
+</style>
+
+<body>
+    <h1>Css 주요속성</h1>
+    <h2>외곽선(border)</h2>
+    <ul id ="border">
+        <li>border : 1px solid red</li>
+        <!-- 선 두께, 선 타입(solid, dotted, dashed), 선 색 -->
+        <li>border-color : green;</li>
+        <!-- 선 색 -->
+        <li>border-radius:10px</li>
+        <!-- 둥근모서리 -->
+        <li>border-top : 2px solid pink</li>
+        <!-- bottom,left,right -->
+        <li>border: none; border-bottom: 2px dashed pink</li>
+        <!-- 방향을 정해서 설정을 적용 -->
+    </ul>
+    <br>
+    <h2>글자(font)</h2>
+    <ul id ="font">
+        <li>color : red</li>
+        <!-- 글자 색 바꿈 -->
+        <li>font-size : 20px</li>
+        <!-- 글자 크기 변경 -->
+        <li>font-weight : bold</li>
+        <!-- 글자 굵기 변경 -->
+        <li>font-style : italic</font-sty></li>
+        <!-- 폰트 변경 -->
+        <li>font-family : 궁서체</li>
+        <!-- 폰트 서체 지정, 최소 두개 이상 지정 권고 3대서체 : 고딕(반듯), 명조(삐침), 필기 + 이모지(그림, 아이콘) -->
+        <li>line-heigth :10px   //  line-heigth :5 :배</li>
+        <!-- 줄간격 -->
+        <li>font : bold italic 20px/20px 궁서체 serif </li>
+        <!-- 서체 지정항목만 맨 마지막에 위치해야 한다 -->
+        <li>text-indent : 50px</li>
+        <!-- 들여쓰기, 내어쓰기 (+,-) -->
+        <li>letter-space : 10px</li>
+        <!-- 자간설정 -->
+        <li>text-alien : center </li>
+        <!-- left, right, justify 양끝정렬 -->
+        <li>user-select : none</li>
+        <!-- 선택방지, 드래그가 안됨 -->
+        <li>text-shadow:2px 2px 2px 2px #ff0000</li>
+        <!-- 텍스트 그림자 -->
+    </ul>
+    <br>
+    <h2>외곽선</h2>
+    <ul>
+        <li></li>
+    </ul>
+    <br>
+    <h2>외곽선</h2>
+    <ul>
+        <li></li>
+    </ul>
+    <br>
+    <h2>외곽선</h2>
+    <ul>
+        <li></li>
+    </ul>
+    <br>
+    <h2>외곽선</h2>
+    <ul>
+        <li></li>
+    </ul>
+    <br>
+</body>
+</html>

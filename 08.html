@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기본</title>
+
+<link href="08.css", rel = "stylesheet">
+<style>
+    /* li{color:cadetblue;} */
+
+</style>
+
+</head>
+<body>
+    <h1>CSS 기본</h1>
+    <h2>CSS 기본</h2>
+    <ul>
+        <li>Html 문서에서 디자인을 꾸미는 모든 활동</li>   
+    </ul>
+    <br>
+    <h2>CSS 작성방식</h2>
+    <ul>
+        <li style="color: blueviolet;">인라인방식 : 
+            태그(요소)에 style 속성으로 작성하는 방식, 비권고방식</li>   
+        <li>내부스타일 : style 태그로 작성하는 방식, html 파일 안에 있으므로 비권고방식</li>
+        <li>외부스타일 : link 태그로 작성하는 방식, 웹표준, 권고사항</li>
+    </ul>
+    <br>
+    <h2>CSS 선택자</h2>
+    <ul>
+        <span>span</span>
+        <li>스타일링 대상 요소(태그) 또는 그 경로</li>   
+        <li>* : 전체선택자</li>   
+        <li>태그(li) : 요소선택자</li>   
+        <li id="green"># : id 선택자 => 고유한 이름을 줌, 유일무이함, 변화가 없는 경우</li>   
+        <li class = "blue">. : 클래스 선택자, 한개 이상의 특정 그룹, 여러개 줄 수 있음,변화가 많은 경우</li>   
+        <li>(빈칸) : 자손선택자, 자손이라는 관계성격 부여</li>
+        <li>> : 자식선택자, 자식이라는 관계성격 부여</li>
+        <li>:nth-child(숫자) : 형제 번호가 숫자 몇번째인지의 요소</li>
+        <li>[속성] : 속성선택자 
+            <input type="password">
+            <input type="text">
+        </li>
+        <li>+ : 형제선택자 => 앞이 input인 input에게 부여</li>
+        <li>~ : 형제선택자 => 선택자의 동생들을 선택</li>
+        <li>, : 그룹선택자</li>
+
+    <br>
+    <h2>CSS 색상표현</h2>
+    <ul>
+        <li>색상명 : red</li>   
+        <li>웹 색상코드(16진수) : #ff0000, 0~9 + a~f, 약식표현 : #f00</li>   
+        <li>RGB : (255,0,0)</li>   
+        <li>RGBA : (255,0,0,1)</li>   
+    </ul>
+    <br>
+    <h2>CSS 단위</h2>
+    <ul>
+        <li>pt,cm,mm : 인쇄용, 비권고</li>   
+        <li>px : 픽셀, 모니터의 점 한개, html 문서의 표준 단위</li>   
+        <li>% : 부모 요소에 대한 배율 단위</li>   
+        <li>rem : 루트(html,body 크기와 똑같이 쓰겠다)가 가진 글자크기에 대한 배율단위</li>   
+        <li>em : 부모가 가진 글자크기에 대한 배율단위</li>   
+        <li>숫자 : x배</li>   
+        <li>vh, vw : 뷰포트의 배율 단위, %와 비슷함</li>   
+    </ul>
+    <br>
+</body>
+</html>

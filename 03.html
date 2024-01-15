@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼문을 활용한 쿼리스트링</title>
+</head>
+
+<body>
+    <h1>폼문을 활용한 쿼리스트링</h1>
+    <h2>구글 통합검색</h2>
+    <h3>내가 무언가를 검색했을 떄, 주소창으로 전송되는 것, 물음표 앞까지가 실제 주소이고 뒤는 파라미터로 받아온 정보를 출력한다</h3>
+    <br>
+    <form action="https://www.google.com/search">
+    <p>확장자가 없는 파일은 가장 상위폴더의 index 폴더가 열린다(index.html 특별한 파일임). search라는 폴더 안의 index파일을 기본값으로 설정함</p>
+    <p>q = 111111   => 이것이 검색 키워드</p>
+        <fieldset>
+            <legend>구글통합검색</legend>
+            <input type="text", name="q">
+            <br>
+            <button>검색</button>
+        </fieldset>
+    </form>
+    <br>
+    <h2>네이버 통합검색</h2>
+    <br>
+    <form action="https://search.naver.com/search.naver">
+    <p>확장자가 없는 파일은 가장 상위폴더의 index 폴더가 열린다(index.html 특별한 파일임). search라는 폴더 안의 index파일을 기본값으로 설정함</p>
+    <p>query = 111111   => 이것이 검색 키워드</p>
+        <fieldset>
+            <legend>네이버 카테고리 검색</legend>
+            <input type="text", name="query">
+                <select name ="where">
+                    <option value="nexearch">통합검색</option>
+
+                    <option value="kin">지식인검색</option>
+
+                    <option value="image">이미지</option>
+                </select>
+            <br>
+            <button>검색</button>
+        </fieldset>
+    </form>
+</body>
+</html>
